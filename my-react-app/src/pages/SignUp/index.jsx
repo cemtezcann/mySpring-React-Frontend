@@ -11,7 +11,7 @@ export function SignUp() {
   const [passwordRepeat, setPasswordRepeat] = useState()
   const onSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:8080/api/v1/users',{
+    axios.post('/api/v1/users',{
       username,
       email,
       password
